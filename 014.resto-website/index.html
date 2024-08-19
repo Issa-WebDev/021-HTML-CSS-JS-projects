@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Simple Resto | html, css and js by IssaDevCi</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="website icon"
+      href="images/banner/burger_banner.png"
+      type="image/png+html"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Début du conteneur -->
+    <div class="container">
+      <!-- Début de l'entête -->
+      <header class="header" id="accueil">
+        <!-- Début de la Nav -->
+        <nav class="nav">
+          <div class="logo">
+            <img src="images/icons/logo.png" alt="logo" />
+          </div>
+
+          <div class="nav-links">
+            <ul>
+              <li><a href="#accueil">Accueil</a></li>
+              <li><a href="#apropos">A propos</a></li>
+              <li><a href="#menu">Menu</a></li>
+              <li><a href="#chef">Chefs</a></li>
+              <li><a href="#user">Avis Utilisateurs</a></li>
+              <li><a href="#contact">Contact</a></li>
+
+              <!-- <img class="mode-icon dark-mode-icon" src="images/icons/dark-mode-icon.png" alt="ferme menu">
+                        <img class="mode-icon light-mode-icon" src="images/icons/light-mode-icon.png" alt="ferme menu"> -->
+
+              <button class="nav-btn">Commander</button>
+            </ul>
+
+            <div>
+              <!-- White icon -->
+              <img
+                class="open-menu-icon"
+                src="images/icons/open-menu-icon.png"
+                alt="ouvre menu"
+              />
+              <img
+                class="close-menu-icon"
+                src="images/icons/close-menu-icon.png"
+                alt="ferme menu"
+              />
+            </div>
+          </div>
+        </nav>
+        <!-- Fin de la Nav -->
+
+        <!-- Début de l'accueil -->
+        <section class="welcome">
+          <div class="welcome-text">
+            <h1 class="welcome-title">
+              Bienvenue Dans Notre Resto Burger_Rise!
+            </h1>
+
+            <p class="welcome-presentation">
+              Cet Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Corrupti consequuntur adipisci fugit tempore incidunt porro et,
+              accusantium minima, dolorem autem, voluptas amet minus. Sunt
+              aspernatur doloribus sed modi, labore dolore.
+            </p>
+
+            <a href="#menu">
+              <button>Allez Au Menu</button>
+            </a>
+          </div>
+
+          <div class="burger-banner">
+            <img src="images/banner/burger_banner.png" alt="burger" />
+          </div>
+        </section>
+        <!-- Fin de l'accueil -->
+      </header>
+      <!-- Fin de l'entête -->
+
+      <!-- Début de main -->
+      <main class="main">
+        <!-- Début de la section à propos -->
+        <section class="apropos" id="apropos">
+          <h1 class="main-item-title">A Propos De Nous</h1>
+
+          <p class="main-item-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ipsam
+            esse perspiciatis repellendus magni commodi odit beatae, unde
+            veritatis neque officia, voluptatibus optio§
+          </p>
+
+          <!-- Début de à propos grid -->
+          <div class="apropos-grid">
+            <div class="apropos-text">
+              <h1 class="main-item-title">
+                Découvre L'histoire De Notre Restaurant.
+              </h1>
+
+              <p>
+                <span>Burger_Rise</span>
+
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
+                nihil tempore repellendus laudantium non sint quaerat quo id
+                adipisci! Quod, ipsa eaque blanditiis asperiores voluptas
+                incidunt voluptatibus amet dolorem dolorum explicabo
+                repudiandae, officia quisquam quidem architecto suscipit? Dolor
+                velit quidem culpa iusto nobis sit? Dicta libero tempore nihil
+                cupiditate earum odit nemo sit alias.
+              </p>
+            </div>
+
+            <div class="apropos-img">
+              <img
+                src="images/banner/apropos.jpg"
+                alt="image de presentation"
+              />
+            </div>
+          </div>
+          <!-- Fin de à propos grid -->
+        </section>
+        <!-- Fin de la section à propos -->
+
+        <!-- Début de la section menu -->
+        <section class="menu" id="menu">
+          <h1 class="main-item-title">Menu</h1>
+
+          <p class="main-item-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ipsam
+            esse perspiciatis repellendus magni commodi odit beatae, unde
+            veritatis neque officia, voluptatibus optio praesentium ut quisquam
+            facere molestiae assumenda facilis Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Obcaecati, deserunt.!
+          </p>
+
+          <!-- Début du menu grid -->
+          <div class="menu-grid">
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/burger/burger_1.jpg" alt="burger" />
+              </div>
+
+              <p class="menu-subtitle">Spéciale Burger........</p>
+            </div>
+
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/rise/rise_2.jpg" alt="rise" />
+              </div>
+
+              <p class="menu-subtitle">Spéciale Rise........</p>
+            </div>
+
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/burger/burger_3.jpg" alt="burger" />
+              </div>
+
+              <p class="menu-subtitle">Spéciale Burger........</p>
+            </div>
+
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/rise/rise_1.jpg" alt="rise" />
+              </div>
+
+              <p class="menu-subtitle">Spéciale Rise........</p>
+            </div>
+
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/burger/burger_2.jpg" alt="burger" />
+              </div>
+
+              <p class="menu-subtitle">Spéciale Burger........</p>
+            </div>
+
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/rise/rise_3.jpg" alt="rise" />
+              </div>
+
+              <p class="menu-subtitle">Spéciale Rise........</p>
+            </div>
+          </div>
+          <!-- Fin du menu grid -->
+        </section>
+        <!-- Fin de la section menu -->
+
+        <!-- Début de la section chef -->
+        <section class="chef" id="chef">
+          <h1 class="main-item-title">Les Chefs Cuisiniers</h1>
+
+          <p class="main-item-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ipsam
+            esse perspiciatis repellendus magni commodi odit beatae, unde
+            veritatis neque officia, voluptatibus optio!
+          </p>
+
+          <!-- Début du chef grid -->
+          <div class="chef-grid">
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/chef/chef_1.jpg" alt="" />
+              </div>
+
+              <p class="main-item-name">Ismaël Konaté</p>
+            </div>
+
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/chef/chef_2.jpg" alt="" />
+              </div>
+
+              <p class="main-item-name">Clara Linne</p>
+            </div>
+
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/chef/chef_3.jpg" alt="" />
+              </div>
+
+              <p class="main-item-name">Bernard Roft</p>
+            </div>
+
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/chef/chef_4.jpg" alt="" />
+              </div>
+
+              <p class="main-item-name">Lia Mia</p>
+            </div>
+          </div>
+          <!-- Fin du chef grid -->
+        </section>
+        <!-- Fin de la section chef -->
+
+        <!-- Début de la section user -->
+        <section class="user" id="user">
+          <h1 class="main-item-title">Avis Des Utilisateurs</h1>
+
+          <p class="main-item-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ipsam
+            esse perspiciatis repellendus magni commodi odit beatae, unde
+            veritatis neque officia, voluptatibus optio!
+          </p>
+
+          <!-- Début de user grid -->
+          <div class="user-grid">
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/costumers/costumer_1.jpg" alt="" />
+
+                <p class="main-item-name">Jhon Doe</p>
+              </div>
+
+              <p class="comment">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                ea aliquam harum dolore sapiente delectus, itaque pariatur
+                nostrum praesentium quisquam.
+              </p>
+            </div>
+
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/costumers/costumer_2.jpg" alt="" />
+
+                <p class="main-item-name">Ben Amid</p>
+              </div>
+
+              <p class="comment">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                ea aliquam harum dolore sapiente delectus, itaque pariatur
+                nostrum praesentium quisquam.
+              </p>
+            </div>
+
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/costumers/costumer_3.jpg" alt="" />
+
+                <p class="main-item-name">Chico JD</p>
+              </div>
+
+              <p class="comment">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                ea aliquam harum dolore sapiente delectus, itaque pariatur
+                nostrum praesentium quisquam.
+              </p>
+            </div>
+
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/costumers/costumer_4.jpg" alt="" />
+
+                <p class="main-item-name">Stone Marley</p>
+              </div>
+
+              <p class="comment">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                ea aliquam harum dolore sapiente delectus, itaque pariatur
+                nostrum praesentium quisquam.
+              </p>
+            </div>
+
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/costumers/costumer_5.jpg" alt="" />
+
+                <p class="main-item-name">Issa_dev</p>
+              </div>
+
+              <p class="comment">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                ea aliquam harum dolore sapiente delectus, itaque pariatur
+                nostrum praesentium quisquam.
+              </p>
+            </div>
+
+            <div class="main-item-card">
+              <div class="card-img">
+                <img src="images/costumers/costumer_6.jpg" alt="" />
+
+                <p class="main-item-name">Rayann Son</p>
+              </div>
+
+              <p class="comment">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+                ea aliquam harum dolore sapiente delectus, itaque pariatur
+                nostrum praesentium quisquam.
+              </p>
+            </div>
+          </div>
+          <!-- Fin de user grid -->
+        </section>
+        <!-- Fin de la section user -->
+
+        <!-- Début de la section contact -->
+        <section class="contact" id="contact">
+          <h1 class="main-item-title">Nos Contacts</h1>
+
+          <p class="main-item-description">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. At ipsam
+            esse perspiciatis repellendus magni commodi odit beatae!
+          </p>
+
+          <!-- Début du formulaire -->
+          <form class="form" action="">
+            <p>Have an account?</p>
+            <h1>Login</h1>
+
+            <div class="inputbox">
+              <input type="text" required placeholder="Username" />
+            </div>
+
+            <div class="inputbox">
+              <input type="text" required placeholder="Password" />
+            </div>
+
+            <div class="inputbox">
+              <textarea
+                cols="30"
+                rows="5"
+                placeholder="Message....."
+              ></textarea>
+            </div>
+
+            <div class="inputbox">
+              <input type="submit" required value="Login" />
+            </div>
+
+            <div class="form-links">
+              <div class="check">
+                <input type="checkbox" />
+                <span>Remember Me</span>
+              </div>
+              <a href="#">Forgot password</a>
+            </div>
+          </form>
+          <!-- Fin du formulaire -->
+        </section>
+        <!-- Fin de la section user -->
+      </main>
+      <!-- Fin de main -->
+
+      <!-- Début de footer -->
+      <footer class="footer">
+        <div class="footer-links">
+          <div class="link-box">
+            <h1>Heure D'ouverture</h1>
+            <div>
+              <a href="">Lun-Jeu : 9h - 22h</a>
+              <a href="">Ven-Sam : 11h - 22h</a>
+            </div>
+          </div>
+
+          <div class="link-box">
+            <h1>Liens</h1>
+            <div>
+              <a href="#accueil" class="active">Accueil</a>
+              <a href="#apropos">A propos</a>
+              <a href="#menu">Menu</a>
+              <a href="#chef">Chef</a>
+              <a href="#user">Avis Utilisateur</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </div>
+
+          <div class="link-box">
+            <h1>Compagnies</h1>
+            <div>
+              <a href="#">Terms & Conditions</a>
+              <a href="#"> Privacy Policy</a>
+              <a href="#"> Cookie Policy</a>
+            </div>
+          </div>
+
+          <div class="link-box">
+            <h1>Others websites</h1>
+            <div>
+              <a href="">BurgerRight.com</a>
+              <a href="">SomeRise.com</a>
+              <a href="">Hamburger.com</a>
+              <a href="">Pizza.com</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="copyright">
+          Copyright &copy; 2024
+          <a href="mailto:ik3576898@gmail.com">Issa_dev</a>
+          .All Rights Reserved.
+        </div>
+      </footer>
+      <!-- Fin de footer -->
+    </div>
+    <!-- Fin du conteneur -->
+  </body>
+</html>

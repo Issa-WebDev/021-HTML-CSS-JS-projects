@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Youtube Clone.</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <!-- Global contenair. -->
+    <div class="global-contenair">
+
+        <!-- Started header. -->
+        <header class="header">
+            <div class="left">
+                <div class="menu-contenair">
+                    <img class="menu" src="icons/hamburger-menu.svg" alt="Menu">
+                </div>
+               <div>
+                    <img class="youtube-logo" src="icons/youtube.svg" alt="youtube logo">
+               </div>
+            </div>
+
+            <div class="middle">
+                <div class="search">
+                    <input type="text" placeholder="Search">
+                    <button>
+                        <img class="search-icon" src="icons/search.svg" alt="search icon">
+                    </button>
+                    <span class="tooltip tooltip-search">Rechercher</span>
+                </div>
+                <div class="voice-search">
+                    <button>
+                        <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="voice search icon">
+                    </button>
+                    <span class="tooltip">vocale</span>
+                </div>
+            </div>
+
+            <div class="right">
+                <!-- start of hide -->
+                <div class="search hide">
+                    <button>
+                        <img class="search-icon" src="icons/search.svg" alt="search icon">
+                    </button>
+                    <span class="tooltip">Rechercher</span>
+                </div>
+                
+                <div class="voice-search hide">
+                    <button>
+                        <img class="voice-search-icon" src="icons/voice-search-icon.svg" alt="voice search icon">
+                    </button>
+                    <span class="tooltip">vocale</span>
+                </div>
+                <!-- End of hide -->
+                <div class="upload-icon-div">
+                    <button class="upload-icon">
+                        <img src="icons/upload.svg" alt="upload video">
+                    </button>
+                    <span class="tooltip">Créer</span>
+                </div>
+                <div class="notifications-icon-div">
+                    <button class="notifications-icon">
+                        <img src="icons/notifications.svg" alt="notifications">
+                        <span class="message">9+</span>
+                    </button>
+                    <span class="tooltip">notifications</span>
+                </div>
+                <div class="current-channel">
+                    <img src="channel-profil/profil-1.jpg" alt="image de tomi denzel">
+                </div>
+            </div>
+
+        </header>
+        <!-- End of header. -->
+
+        <!-- Start Sidebar -->
+        <!-- Start Of sidebard-tiny -->
+        <div class="sidebar-tiny">
+            <div class="link active">
+                <img src="icons/home.svg" alt="">
+                <span class="span">Acceuil</span>
+            </div>
+
+            <div class="link">
+                <img src="icons/youtube-shorts.svg" alt=""> 
+                <span class="span">Shorts</span>
+            </div>
+
+            <div class="link">
+                <img src="icons/subscriptions.svg" alt="">
+                <span class="span">Abonnements</span>
+            </div>
+            
+            <div class="link">
+                <img src="icons/library.svg" alt="">
+                <span class="span">Vous</span>
+            </div>
+        </div>
+        <!-- End Of sidebar-tiny -->
+
+        <!-- Start Of sidebar-full -->
+        <div class="sidebar-full">
+            <div>
+                <div class="link active">
+                    <img src="icons/home.svg" alt="">
+                    <span class="span">Acceuil</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/youtube-shorts.svg" alt=""> 
+                    <span class="span">Shorts</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/subscriptions.svg" alt="">
+                    <span class="span">Abonnements</span>
+                </div>
+                
+                <div class="link">
+                    <img src="icons/library.svg" alt="">
+                    <span class="span">Abonnements</span>
+                </div>
+    
+                <div><hr></div>
+    
+                <div class="link">
+                    <span class="vous">Vous</span>
+                    <img class="chevron-down" src="icons/chevron-down.svg" alt="">
+                </div>
+    
+                <div class="link">
+                    <img src="icons/profile.svg" alt="">
+                    <span>Votre chaîne</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/history.png" alt="">
+                    <span>Historiques</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/playlist.svg" alt="">
+                    <span>Playlists</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/library.svg" alt="">
+                    <span>Vos vidéos</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/time.svg" alt="">
+                    <span>A regarder plus tard</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/like.svg" alt="">
+                    <span>Vidéos "j'aime"</span>
+                </div>
+            </div>
+    
+            <div><hr></div>
+    
+            <div>
+                <div class="title">
+                    <span>Abonnements</span>
+                </div>
+    
+                <div class="link">
+                    <img class="profil" src="channel-profil/profil-3.jpg" alt="">
+                    <span>Benjamin Code</span>
+                </div>
+    
+                <div class="link">
+                    <img class="profil" src="channel-profil/profil-1.jpg" alt="">
+                    <span>Yomi Denzel</span>
+                </div>
+    
+                <div class="link">
+                    <img class="profil" src="channel-profil/profil-2.jpg" alt="">
+                    <span>Programmming</span>
+                </div>
+    
+                <div class="link">
+                    <img class="profil" src="channel-profil/profil-4.jpg" alt="">
+                    <span>MOTIVACTION</span>
+                </div>
+    
+                <div class="link">
+                    <img class="chevron-down-plus" src="icons/chevron-down.svg" alt="">
+                    <span>Afficher 100 elem..</span>
+                </div>
+            </div>
+    
+            <div><hr></div>
+    
+            <div>
+                <div class="title">
+                    <span>Explorer</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/trend.png" alt="">
+                    <span>Tendances</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/live.png" alt="">
+                    <span>Direct</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/music.svg" alt="">
+                    <span>Musique</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/game.svg" alt="">
+                    <span>Jeux vidéos</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/note-actu.svg" alt="">
+                    <span>Actualités</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/sports.svg" alt="">
+                    <span>Sports</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/light-bulb.svg" alt="">
+                    <span>Savoirs & cultures</span>
+                </div>
+            </div>
+    
+            <div><hr></div>
+    
+            <div>
+                <div class="title">
+                    <span>Autres contenus yout..</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/youtube-studios.png" alt="">
+                    <span>Youtube studios</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/youtube-kids.png" alt="">
+                    <span>youtube kids</span>
+                </div>
+            </div>
+    
+            <div><hr></div>
+    
+            <div>
+                <div class="link">
+                    <img src="icons/settings.png" alt="">
+                    <span>Paramètres</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/flag.svg" alt="">
+                    <span>Historiques sign..</span>
+                </div>
+    
+                <div class="link">
+                    <img src="icons/comments.svg" alt="">
+                    <span>Envoyer des com...</span>
+                </div>
+            </div>
+        </div>
+        <!-- End Of sidebar-full  -->
+        <!-- End Of Sidebar -->
+
+        <!-- Start Main -->
+        
+        <div class="main">
+
+            <div class="main-top">
+                <button class="active">Tous</button>
+                <button>JavaScript</button>
+                <button>Python</button>
+                <button>Muique</button>
+                <button>Structures de données</button>
+                <button>E-commerce</button>
+                <button>Graphisme</button>
+                <button>Ingraphisme</button>
+                <button>busness en ligne</button>
+                <button>Education</button>
+                <button>Islam</button>
+            </div>
+
+            <div class="video-card-contenair">
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-1.webp" alt="">
+                        <div class="duration">44:02</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-1.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">5 Etapes Pour Transformer Sa Vie en 2024 (Guide Complet de Productivité)</div>
+                            <div class="channel-name">Yomi Denzel 
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">334 k vues  &#183; il y a 2 mois</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-2.webp" alt="">
+                        <div class="duration">A VENIR</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-2.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">How Google Killed This Milion-Dollar Business</div>
+                            <div class="channel-name">Programming with Mosh
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">6 en attentes  &#183; Première le 10/04/2024 14:00</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-3.webp" alt="">
+                        <div class="duration">19:21</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-3.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">Combien d'argent a générer mon site (après 1 mois)</div>
+                            <div class="channel-name">Benjamin Code
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">52 k vues &#183; il y a 3 semaines</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-4.webp" alt="">
+                        <div class="duration">33:22</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-4.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">L'ART DE MAÎTRISER SON ESPRIT POUR REUSSIR SA VIE | David Goggins</div>
+                            <div class="channel-name">MOTIVACTION
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">717 k vues &#183; il y a 1 an</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-5.webp" alt="">
+                        <div class="duration">62:02</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-1.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">Stoïsime : 10 Leçons pour reprendre le contrôle de sa vie</div>
+                            <div class="channel-name">Yomi Denzel
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">189 k vues &#183; il y a 1 mois</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-6.jpg" alt="">
+                        <div class="duration">09:51</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-6.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">Zagba LeRequin: Mon PAPA est PARTI dans des CONDITIONS INHUMAINES!</div>
+                            <div class="channel-name">L'Inverstisseur Africain
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">54 k vues &#183; il y a 1 mois</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-7.webp" alt="">
+                        <div class="duration">21:55</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-7.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">Poitrine.Entraînement des épaules et des abdominaux (sans équipements, sans salle de sports)</div>
+                            <div class="channel-name">-Fitness
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">3,2 M de vues &#183; il y a 1 an</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-8.webp" alt="">
+                        <div class="duration">1:07:16</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-8.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">TailwindCSS en 1 heure</div>
+                            <div class="channel-name">Melvynx . Apprendre à coder
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">327 vues  &#183; il y a 2 heures</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-9.webp" alt="">
+                        <div class="duration">09:00</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-9.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">Devenir plus intelligent : Les 6 Techniques Testées et Approuvées</div>
+                            <div class="channel-name">Talk By Fanta
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">39 k vues &#183; il y a 7 mois</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-10.webp" alt="">
+                        <div class="duration">22:12</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-10.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">Ma pire journée de développeur</div>
+                            <div class="channel-name">Parfaitement Web
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">14 k vues &#183; il y a 1 an</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-11.webp" alt="">
+                        <div class="duration">05:02</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-11.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">What would happen if you didn’t drink water? - Mia Nacamulli</div>
+                            <div class="channel-name">TED-Ed
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">12 M de vues  &#183; il y a 5 an</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-12.webp" alt="">
+                        <div class="duration">24:52</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-12.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">
+                                Dubai's Crazy Underwater Train and Other Things #Only in Dubai</div>
+                            <div class="channel-name">Destination Tips
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">3 M de vues &#183; il y a 1 an</div>
+                        </div> 
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+            </div>
+
+
+            <!-- Start shorts -->
+            <div class="shorts-contenair">
+                <div class="shorts-top">
+                    <div class="shorts-icon">
+                        <img src="icons/shorts.png" alt="">
+                        <h2>Shorts</h2>
+                    </div>
+                    <div class="delete">
+                        <img src="icons/delete.png" alt="">
+                    </div>
+                </div>
+
+                <div class="video-shorts-content">
+                    <div class="video-shorts">
+                        <div>
+                            <img src="shorts/video-short-1.webp" alt="">
+                        </div>
+                        <div class="shorts-info">
+                            <div class="title-shorts">La Discipline</div>
+                            <div class="view">27 k</div>
+                            <div class="three-dotte">...</div>
+                        </div>
+                    </div>
+
+                    <div class="video-shorts">
+                        <div>
+                            <img src="shorts/video-short-2.webp" alt="">
+                        </div>
+                        <div class="shorts-info">
+                            <div class="title-shorts">The Truth About Streching!😯😯😯</div>
+                            <div class="view">4,2 M de vues</div>
+                            <div class="three-dotte">...</div>
+                        </div>
+                    </div>
+
+                    <div class="video-shorts">
+                        <div>
+                            <img src="shorts/video-short-3.webp" alt="">
+                        </div>
+                        <div class="shorts-info">
+                            <div class="title-shorts">Sigma Speed 4.0 #Shorts #ishowspeed #sidemen...</div>
+                            <div class="view">7,8 M de vues</div>
+                            <div class="three-dotte">...</div>
+                        </div>
+                    </div>
+
+                    <div class="video-shorts">
+                        <div>
+                            <img src="shorts/video-short-4.webp" alt="">
+                        </div>
+                        <div class="shorts-info">
+                            <div class="title-shorts">Cet homme à lui seul a fait perdre énormément d'arge...</div>
+                            <div class="view">194 k</div>
+                            <div class="three-dotte">...</div>
+                        </div>
+                    </div>
+
+                    <div class="video-shorts">
+                        <div>
+                            <img src="shorts/video-short-5.webp" alt="">
+                        </div>
+                        <div class="shorts-info">
+                            <div class="title-shorts">Temps de réfléxion: faire un pas vers le répentir...</div>
+                            <div class="view">6 k</div>
+                            <div class="three-dotte">...</div>
+                        </div>
+                    </div>
+
+                    <!-- hide -->
+                    <div class="video-shorts hide">
+                        <div>
+                            <img src="shorts/video-short-6.jpg" alt="">
+                        </div>
+                        <div class="title-shorts">
+                            <div class="title-shorts">Améliorer vos cométences sociales</div>
+                            <div class="view">11 k</div>
+                            <div class="three-dotte">...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shorts-bottom">
+                    <hr>
+                    <div class="more">
+                        <p>Plus</p>
+                        <div>
+                            <img src="icons/chevron-down.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of shorts -->
+
+            
+            <div class="video-card-contenair">
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-13.webp" alt="">
+                        <div class="duration">02:22:02</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-13.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">
+                                Talking Tech and AI with Google CEO Sundar Pichai!</div>
+                            <div class="channel-name">Marques Brownlee
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">3.4 M de vues &#183; il y a 6 mois</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-14.webp" alt="">
+                        <div class="duration">35:44</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-14.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">How The World's Largest Cruise Ship Makes 30,000 Meals Every Day</div>
+                            <div class="channel-name">Business Insider
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">14 M de vues &#183; il y a 1 an</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-15.webp" alt="">
+                        <div class="duration">16:09</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-15.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">Crazy Tik Toks Taken Moments Before DISASTER</div>
+                            <div class="channel-name">SSSniperWolf
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">12 M de vues &#183; il y a 1 an</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-16.webp" alt="">
+                        <div class="duration">10:02</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-16.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">The Simplest Math Problem No One Can Solve - Collatz Conjecture</div>
+                            <div class="channel-name">Veritasium
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">18 M de vues &#183; il y a 4 mois</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-17.webp" alt="">
+                        <div class="duration">17:32</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-17.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">The SECRET to Super Human STRENGTH</div>
+                            <div class="channel-name">ThenX
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">20 M de vues &#183; il y a 3 ans</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-18.webp" alt="">
+                        <div class="duration">55:32</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-18.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">Inside The World's Biggest Passenger Plane</div>
+                            <div class="channel-name">Tech Vision
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">3.7 M de vues  &#183; il y a 10 mois</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-19.webp" alt="">
+                        <div class="duration">01:00:02</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-19.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">Anything You Can Fit In The Circle I’ll Pay For
+                                
+                                141M views · 1 year ago</div>
+                            <div class="channel-name">MrBeast
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">141M de vues  &#183; il y a 1 an</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-20.webp" alt="">
+                        <div class="duration">15:22</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-20.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">
+                                Kadane's Algorithm to Maximum Sum Subarray Problem
+                            </div>
+                            <div class="channel-name">CS Dojo
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">519 k vues  &#183; il y a 5 ans</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-21.webp" alt="">
+                        <div class="duration">25:00</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-21.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">Try Not To Laugh Challenge #9</div>
+                            <div class="channel-name"> Markiplier
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">19 M de vues  &#183; il y a 4 ans</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-22.webp" alt="">
+                        <div class="duration">14:57</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-22.jpeg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">
+                                Why Planes Don't Fly Over Tibet
+                                
+                                6.6M views · 1 year ago</div>
+                            <div class="channel-name">RealLifeLore
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">6.6 M de vues  &#183; il y a 1 an</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-4.webp" alt="">
+                        <div class="duration">35:10</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-4.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">L'ART DE MAÎTRISER SON ESPRIT POUR REUSSIR SA VIE | David Goggins
+                                717 k vues · il y a 1 an</div>
+                            <div class="channel-name"> MOTIVACTION
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">717 k vues &#183; il y a 1 an</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+
+                <div class="video-card">
+                    <div class="video">
+                        <img src="thumbnails/thumbnails-23.jpg" alt="">
+                        <div class="duration">27:33</div>
+                    </div>
+                    <div class="channel-info">
+                        <div class="profil">
+                            <img src="channel-profil/profil-1.jpg" alt="">
+                        </div>
+                        <div class="video-info">
+                            <div class="title-video">J'ai Menti, j'avais rien gagner</div>
+                            <div class="channel-name">Yomi Denzel
+                                <img src="icons/ok.png" alt="">
+                            </div>
+                            <div class="view">152 k vues  &#183; il y a 1 mois</div>
+                        </div>
+                        <div class="three-dotte">...</div>
+                    </div>
+                </div>    
+            </div>
+        </div>
+        <!-- End of Main -->
+
+    </div>
+</body>
+</html>
