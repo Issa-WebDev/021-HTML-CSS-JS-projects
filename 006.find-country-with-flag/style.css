@@ -1,0 +1,33 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	/* flex-direction: column; */
+	/* gap: 20px; */
+	height: 100vh;
+	background-color: antiquewhite;
+}
+.form {
+	width: 200px;
+	height: 200px;
+	border: 2px solid gray;
+}
+input {
+	width: 200px;
+	border: 2px solid gray;
+	padding: 15px 10px;
+	outline: none;
+}
+h1 {
+	position: absolute;
+	top: 80px;
+	font-size: 3rem;
+	color: #0a4f52;
+	font-weight: bold;
+}

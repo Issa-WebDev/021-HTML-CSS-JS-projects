@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" id="display" placeholder="0" />
+      <div class="touch">
+        <input onclick="clearDisplay()" type="button" value="AC" />
+        <input onclick="addValue('%')" type="button" value="%" />
+        <input onclick="addValue('/')" type="button" value="/" />
+        <input onclick="removeValue()" type="button" value="❌" />
+
+        <input onclick="addValue('7')" type="button" value="7" />
+        <input onclick="addValue('8')" type="button" value="8" />
+        <input onclick="addValue('9')" type="button" value="9" />
+        <input onclick="addValue('*')" type="button" value="x" />
+
+        <input onclick="addValue('4')" type="button" value="4" />
+        <input onclick="addValue('5')" type="button" value="5" />
+        <input onclick="addValue('6')" type="button" value="6" />
+        <input onclick="addValue('-')" type="button" value="-" />
+
+        <input onclick="addValue('1')" type="button" value="1" />
+        <input onclick="addValue('2')" type="button" value="2" />
+        <input onclick="addValue('3')" type="button" value="3" />
+        <input onclick="addValue('+')" type="button" value="+" />
+
+        <input onclick="addValue('0')" type="button" value="0" />
+        <input onclick="addValue('.')" type="button" value="," />
+        <input onclick="result()" type="button" value="=" />
+      </div>
+    </div>
+  </body>
+</html>

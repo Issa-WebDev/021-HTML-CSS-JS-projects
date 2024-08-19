@@ -1,0 +1,25 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background-color: aqua;
+}
+.box {
+	display: flex;
+}
+.btn {
+	padding: 20px;
+	background-color: rgb(24, 24, 88);
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	border-radius: 5px;
+	border: 10px solid #fff;
+}
