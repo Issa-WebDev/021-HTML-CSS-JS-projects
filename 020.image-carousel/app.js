@@ -9,10 +9,10 @@ scrollGallery.addEventListener("wheel", (e) => {
 
 back.addEventListener("click", () => {
   scrollGallery.style.scrollBehavior = "smooth";
-  scrollGallery.scrollLeft -= 600;
+  scrollGallery.scrollLeft -= 800;
 });
 
 next.addEventListener("click", () => {
   scrollGallery.style.scrollBehavior = "smooth";
-  scrollGallery.scrollLeft += 600;
+  scrollGallery.scrollLeft += 800;
 });
