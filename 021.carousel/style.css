@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: linear-gradient(
+    45deg,
+    rgb(48, 69, 69),
+    rgb(25, 58, 58),
+    rgb(1, 107, 107)
+  );
+}
+
+.carousel-container {
+  max-width: 600px; /* Largeur du carrousel */
+  overflow: hidden;
+  border-radius: 20px;
+  border: 2px solid #fff;
+}
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20%;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  position: relative;
+  min-width: 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  filter: blur(5px);
+  transition: filter, transform 0.5s ease-in-out;
+}
+
+.carousel-item:hover .info {
+  transform: translateY(100%);
+}
+
+.carousel-item:hover img {
+  filter: blur(0);
+}
+
+.info {
+  position: absolute;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), teal);
+  top: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  transform: translateY(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.info .name {
+  color: #fff;
+  font-weight: bold;
+}
+
+.info .text {
+  text-align: center;
+  padding: 0 100px;
+  color: #fff;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.info .btn {
+  padding: 8px 30px;
+  background-color: rgb(25, 213, 213);
+  color: rgb(9, 36, 36);
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.prev-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 100%;
+  transition: background 0.5s ease-in-out;
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-btn {
+  left: calc((100vw / 2) - 370px);
+}
+
+.next-btn {
+  right: calc((100vw / 2) - 370px);
+}
+
+.design {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  width: 50px;
+  height: 100px;
+  border: 20px solid rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+}
+
+.design-1 {
+  transform: skew(45deg);
+}
+.design-2 {
+  transform: skew(318deg);
+}
