@@ -1,0 +1,34 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+/* Container for the slider */
+.slider {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+/* Container for the sildes */
+.slides {
+  display: flex;
+  transition: transform 1s ease-in-out;
+}
+
+/* Each individual slide */
+.slide {
+  min-width: 100%;
+  /* min-width: 100vw; */
+}
+
+/* Optional: stylintfor the images */
+.slide img {
+  width: 100%;
+}
