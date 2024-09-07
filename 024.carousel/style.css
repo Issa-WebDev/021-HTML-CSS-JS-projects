@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cascadia code", sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+button {
+	outline: none;
+	border: none;
+	font-size: 2rem;
+	background-color: transparent;
+	/* color: gray; */
+	font-weight: bold;
+	cursor: pointer;
+}
+.container {
+	position: relative;
+	padding: 0 10px;
+	/* background: red; */
+	margin: 0 20px;
+	width: 960px;
+	overflow: hidden;
+
+}
+.carousel-container {
+  display: flex;
+  /* background-color: teal; */
+  width: 4424px;
+  padding: 20px 0;
+}
+
+.box {
+  width: 300px;
+  background-color: #fff;
+  overflow: hidden;
+  padding: 5px;
+  margin: 0 8px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.imgbox {
+  width: 100%;
+}
+.imgbox img {
+  width: 100%;
+}
+.name {
+  padding: 10px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 1.3rem;
+}
+.message {
+  width: 100%;
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 10px 5px;
+}
