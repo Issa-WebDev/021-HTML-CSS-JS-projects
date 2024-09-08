@@ -9,11 +9,10 @@ carousel.addEventListener("wheel", (e) => {
 
 prevBtn.addEventListener("click", () => {
   carousel.style.scrollBehavior = "smooth";
-  carousel.scrollLeft -= 326;
+  carousel.scrollLeft -= 325;
 });
 
 nextBtn.addEventListener("click", () => {
   carousel.style.scrollBehavior = "smooth";
-  carousel.scrollLeft += 326;
-  console.log("cool");
+  carousel.scrollLeft += 325;
 });
